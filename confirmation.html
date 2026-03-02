@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Q3 Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #014f86;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .navbar {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .nav-left a,
+        .nav-right a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .btn {
+            background: #1e90ff;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #0d6efd;
+        }
+
+        .message-box {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin: 150px auto;
+            background: rgba(255,255,255,0.9);
+            color: #003366;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .message-box h1 {
+            margin-bottom: 15px;
+            color: #014f86;
+        }
+
+        .verify-link {
+            margin-top: 15px;
+            display: inline-block;
+            color: #1e90ff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #001d3d;
+            color: white;
+            margin-top: auto;
+}
+    </style>
+</head>
+<body style="background-color: #014f86;">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+      <img src="Projlogo.png" alt="Logo" height="70">
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="fairmatrix.html" class="nav-link">Fair Guide</a></li>
+                    <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                    <li class="nav-item"><a href="help.html" class="nav-link">Help</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <a href="registration.html" class="btn btn-primary">Create Account
+                </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="message-box">
+        <h1>Your account has been successfully created!</h1>
+        <p>Check your email inbox to confirm and activate your account.</p>
+        <a href="https://mail.google.com/mail/u/0/" target="_blank" class="verify-link">Verify Email</a>
+    </div>
+    <footer id="footer" class="text-center" style="background-color: #001d3d; color: white">
+        Vita De Guzman & Franchesca Dela Rosa | 9 - Topaz  © 2026
+    </footer>
+</body>
+</html>
